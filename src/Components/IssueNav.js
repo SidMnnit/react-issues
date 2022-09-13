@@ -8,7 +8,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 function IssueNav() {
     return(
         <div style={{height: "50px"}}>
-            <Navbar style={{backgroundColor: "rgb(235, 239, 240)", height: "50px", borderRadius: "5px"}}>
+            <Navbar style={{backgroundColor: "rgb(235, 239, 240)", height: "50px", borderTopRightRadius: "5px", borderTopLeftRadius: "5px"}}>
                 <div style={{marginLeft: "20px"}}>
                     <Navbar.Brand href="#" > <i class="bi bi-record-circle"></i><b> 805 open</b></Navbar.Brand>
                     <Navbar.Brand href="#" > 1650 closed</Navbar.Brand>

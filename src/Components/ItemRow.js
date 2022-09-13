@@ -12,16 +12,7 @@ function ItemRow(props) {
                             {props.title} {'  '}
                             {
                                 props.labels.map((label, idx)=>(
-                                    // idx==0 ?
-                                    // <Badge bg="warning" style={{marginLeft: "5px"}}>{label.name}</Badge> :
-                                    // idx == 1 ?
-                                    // <Badge bg="success" style={{marginLeft: "5px"}}>{label.name}</Badge> :
-                                    // idx == 2 ?
-                                    // <Badge bg="danger" style={{marginLeft: "5px"}}>{label.name}</Badge> :
-                                    // idx == 3 ?
-                                    // <Badge bg="secondary" style={{marginLeft: "5px"}}>{label.name}</Badge> :
-                                    // <Badge bg="primary" style={{marginLeft: "5px"}}>{label.name}</Badge>
-                                    <BadgeComponent name={label.name} color={label.color}/>
+                                    <BadgeComponent name={label.name} color={label.color} description={label.description}/>
                                 ))
                             }
                         </div>
